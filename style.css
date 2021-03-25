@@ -1,0 +1,114 @@
+
+/* General Style */
+
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: #E4DDE5;
+}
+
+.container { 
+    border-radius: 32px;
+    width: 100%;
+    margin: auto;
+    height: 667px;
+}
+
+ /* Header Style  */
+
+.container-header {
+    border-radius: 32px;
+    height: 50%;
+    border-radius: 32px;
+}
+
+.container-header-image {
+    align-items: center;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    width: 295px;
+    height: 287px;
+    margin: 0 auto;
+    padding-top: 26px;
+    border-radius: 32px;
+}
+
+/* Content Style */
+
+.container-content {
+    height: 50%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.342);
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
+    margin-left: 12px;
+}
+
+.container-content-head {
+    color: #240D39;
+    padding: 20px;
+}
+
+.container-content-paragraph {
+    color: #240D39;
+    font-size: 20px;
+}
+
+#start-button {
+    margin: 0 auto;
+    background-color: #C8A6B7;
+    color: #E4DDE5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    width: 160px;
+    height: 50px;
+    margin-top: 30px;
+    transition: all 0.4s ease-in-out;
+}
+
+.fas {
+    padding-left: 15px;
+}
+
+/* wavers style */
+
+.divider-bottom {
+    z-index: -20;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(225% + 1.3px);
+    height: 150px;
+}
+
+.divider-bottom .shape-fill {
+    fill: #240D39;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .divider-bottom svg {
+        width: calc(204% + 1.3px);
+        height: 379px;
+    }
+}
