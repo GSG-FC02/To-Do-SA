@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: #E4DDE5;
+}
+
+    /* header  */
+.header {
+    position: relative;
+    width: 375px;
+    border-radius: 32px;
+}
+
+.app-name{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 27px;
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+.add-task{
+    margin: 50px 20px 0 27px;
+}
+
+.todo-input{
+    width: 281px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    background-color: #e4dde5ce;
+}
+.todo-input:focus , option{
+    background-color: #E4DDE5;
+    padding-left:20px ;
+}
+
+.todo-button{
+    background-color: #e4dde5ce;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    color:#240D39 ;
+    font-size: 14px;
+    color: #240D39;
+    font-weight: bold;
+}
+/* end header */
+
+/* Start to do list Style */
+
+.todo-container{
+    margin-top: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 12px 0 57px;
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: 15px;
+    margin-left: -28px;
+    background-color: #C8A6B7;
+    font-size: 14px;
+    color: #240D39;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    width: 315px;
+    height: 50px;
+    padding-left: 18px;
+    transition: all 0.5s ease;
+}
+.todo li{
+    flex: 1;
+}
+
+.delete-icon , .checked-icon{
+    border: none;
+
+}
+
+.delete-btn ,.complete-btn{
+    background-color: #e4dde5ce;
+    color: #240D39;
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+.todo-item {
+    padding: 0px 8px;
+}
+
+.fa-trash, .fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select{
+    width: 322px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    background-color: #e4dde5ce;
+    padding-left: 20px
+}
+
+.select {
+    margin: 25px auto;
+    width: 322px;
+}
+
+
+.select:hover {
+    background: white;
+    color: #C8A6B7;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    
+}
+option{
+    text-align: center;
+
+}
+
+
+/* wave style */
+.custom-shape-divider-top-1616529989 {
+    position: absolute;
+    z-index: -20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    border-radius: 32px;
+
+}
+
+.custom-shape-divider-top-1616529989 svg {
+    position: relative;
+    z-index: -20;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    border-radius: 32px;
+
+}
+
+.custom-shape-divider-top-1616529989 .shape-fill {
+    fill: #240D39;
+    z-index: -20;
+
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1616529989 svg {
+        width: calc(300% + 1.3px);
+        height: 393px;
+    }
+}
