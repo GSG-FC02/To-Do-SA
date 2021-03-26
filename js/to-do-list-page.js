@@ -64,7 +64,6 @@ function deletecheck(event){
     const todo = item.parentElement;
     todo.classList.toggle("completed");
   }
-  location.reload();
 }
 
 // Filter ToDo Elements
@@ -153,4 +152,5 @@ function removeLocalToDos(todo){
   const todoIndex = todo.children[0].innerText;
   todos.splice(todos.indexOf(todoIndex), 1);
   localStorage.setItem("todos", JSON.stringify(todos));
+  location.reload();
 }
