@@ -35,6 +35,7 @@ body {
     border: none;
     border-radius: 50px;
     background-color: #e4dde5ce;
+    outline: none;
 }
 .todo-input:focus , option{
     background-color: #E4DDE5;
@@ -50,6 +51,8 @@ body {
     font-size: 14px;
     color: #240D39;
     font-weight: bold;
+    outline: none;
+
 }
 /* end header */
 
