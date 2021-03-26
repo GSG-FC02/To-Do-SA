@@ -64,6 +64,7 @@ function deletecheck(event){
     const todo = item.parentElement;
     todo.classList.toggle("completed");
   }
+  location.reload();
 }
 
 // Filter ToDo Elements
